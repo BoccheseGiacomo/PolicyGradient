@@ -13,9 +13,9 @@ This project involves the implementation of a neural network-based agent that ut
 
 ## Problem Statement
 The dynamic system is governed by the equation:
-```latex
-\frac{dx}{dt} = 0.05x(t) + 0.2a(t)
-```
+
+![image](https://github.com/BoccheseGiacomo/PolicyGradient/assets/104854120/c2baef06-a3ea-4215-acc8-4af3be6a6757)
+
 Where `a(t)` represents the action taken by the agent at time `t`. The action is partly deterministic and partly stochastic, sampled from a normal distribution based on mean and standard deviation computed by the neural network.
 
 ### Step Function
