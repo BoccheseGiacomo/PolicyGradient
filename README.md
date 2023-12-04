@@ -86,7 +86,7 @@ def finish_episode():
         R = r + gamma * R
         returns.insert(0, R)
     returns = torch.tensor(np.array(returns)).float()
-    returns = (returns - returns.mean()) / (returns.std() + 1e-9)
+    returns = (returns - returns.mean()) / (returns.std() + 1e-5)
     for log_prob, R in zip(policy.log_probs, returns):
         policy_loss.append(-log_prob * R)
     optimizer.zero_grad()
