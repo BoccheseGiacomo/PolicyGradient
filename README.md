@@ -100,7 +100,16 @@ def finish_episode():
 ```
 
 ## Results
-The algorithm generally converges after 200-400 episodes, with a computation time of about 30 seconds. The cumulative reward is plotted against the number of episodes. Plots of the policy mean are included to visualize its performance.
+The cumulative reward is plotted against the number of episodes.
+![image](https://github.com/BoccheseGiacomo/PolicyGradient/assets/104854120/8feda28d-8a8a-4bbe-b9f5-7aa4ffb8b41c)
+
+
+
+
+Plots of the policy mean are included to visualize its learnt policy.
+
+![image](https://github.com/BoccheseGiacomo/PolicyGradient/assets/104854120/9a5c411e-cf35-4ef1-9790-49fe421e5cc5)
+
 
 ## Conclusion
 This setup, combining a neural network with a continuous policy gradient algorithm, is notably simple and versatile, suitable for a wide range of problems.
